@@ -5,7 +5,7 @@ import Container from "@material-ui/core/Container";
 const App: React.FC = () => {
   return (
     <div>
-      <Container>
+      <Container maxWidth={false}>
         <Typography variant="h1" component="h2" gutterBottom>
           h1. Heading
         </Typography>
