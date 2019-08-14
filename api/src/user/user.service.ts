@@ -5,5 +5,9 @@ import { UserRepository } from './user.repository';
 
 @Injectable()
 export class UserService {
-    constructor(@InjectRepository(UserRepository) userRepo: UserRepository){}
+    constructor(@InjectRepository(UserRepository) private userRepo: UserRepository) { }
+    
+    async getUserById(id: number | string): Promise<User> {
+        return await this.userRepo.getUserById(id);
+    }
 }
