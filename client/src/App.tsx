@@ -5,8 +5,7 @@ import Container from "@material-ui/core/Container";
 const App: React.FC = () => {
   return (
     <div>
-      <Container maxWidth={false}>
-        <p className="bg-gray-500">Hello world</p>
+      <Container maxWidth={false} className="pt-8">
         <Typography className="bg-gray-500" variant="h1" component="h2" gutterBottom>
           h1. Heading
         </Typography>
